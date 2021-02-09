@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6251961e04fde2444a305b112730f248, type: 3}
+  m_Script: {fileID: 11500000, guid: 37b72e97671ed4a4b90aa55865744c8c, type: 3}
   m_Name: A2
   m_EditorClassIdentifier: Assembly-CSharp::State
   levelText: "System Settings Options:\r\n\r\n\t1. Open Command Prompt\r\n\t2. Open
-    Disk Management Tools\r\n\t3. Enter Into Data Base"
+    Disk Management Tools\r\n\t3. Enter Into Data Basea"
   nextStates:
   - {fileID: 11400000, guid: 8635db04b1a3cfd43ada4705e19eec7e, type: 2}
-  - {fileID: 11400000, guid: eaa65c0af64c9b6409d1981b0387f740, type: 2}
+  - {fileID: 11400000, guid: 9574f955c57480845bcb0f5a9b6a3a34, type: 2}
   - {fileID: 11400000, guid: 43276a67de56247498e8d91d74ff9fce, type: 2}
