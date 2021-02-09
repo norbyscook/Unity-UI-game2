@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37b72e97671ed4a4b90aa55865744c8c, type: 3}
-  m_Name: C1
+  m_Name: C0 Disk Managemnt
   m_EditorClassIdentifier: Assembly-CSharp::State
   levelText: 
   nextStates: []
