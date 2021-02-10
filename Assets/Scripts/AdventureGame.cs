@@ -26,23 +26,28 @@ public class AdventureGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ManageStates();
+        bodyText.text = currentState.GetStateText();
     }
-    
-    int input = -1;
-    private void OnGUI()
+
+    void ManageStates()
     {
-        input = IntInput(input);
-        bodyText.text = input.ToString();
-    }
-    int IntInput(int input)
-    {
-        Event e = Event.current;
-        if (e.isKey && (int)e.keyCode > 0)
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            return (int)e.keyCode - (int)KeyCode.Alpha0;
+            States[] nextStates = currentState.GetNextStates();
+            currentState = nextStates[0];
         }
-        return input;
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            States[] nextStates = currentState.GetNextStates();
+            currentState = nextStates[1];
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            States[] nextStates = currentState.GetNextStates();
+            currentState = nextStates[2];
+        }
+
     }
 }
 
