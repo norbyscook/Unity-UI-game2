@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::State
   levelText: EMPTY
   nextStates:
-  - {fileID: 11400000, guid: 43276a67de56247498e8d91d74ff9fce, type: 2}
+  - {fileID: 11400000, guid: 721cbe9bd02ec8445aa8c428f58c790f, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}

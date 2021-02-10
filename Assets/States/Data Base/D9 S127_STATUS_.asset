@@ -20,4 +20,6 @@ MonoBehaviour:
 
     press 1 to restart.'
   nextStates:
-  - {fileID: 11400000, guid: b300285bc8d44ef408aab0ed8d786d4b, type: 2}
+  - {fileID: 11400000, guid: 02688ef85ae78dc4ca0195dd9a9c32c1, type: 2}
+  - {fileID: 11400000, guid: 02688ef85ae78dc4ca0195dd9a9c32c1, type: 2}
+  - {fileID: 11400000, guid: 02688ef85ae78dc4ca0195dd9a9c32c1, type: 2}

@@ -15,6 +15,6 @@ MonoBehaviour:
   levelText: "System Settings Options:\r\n\r\n\t1. Open Command Prompt\r\n\t2. Open
     Disk Management Tools\r\n\t3. Enter Into Data Base"
   nextStates:
-  - {fileID: 11400000, guid: 8635db04b1a3cfd43ada4705e19eec7e, type: 2}
-  - {fileID: 11400000, guid: 9574f955c57480845bcb0f5a9b6a3a34, type: 2}
-  - {fileID: 11400000, guid: 43276a67de56247498e8d91d74ff9fce, type: 2}
+  - {fileID: 11400000, guid: 01c4c517715750b4e89a39ef166b1533, type: 2}
+  - {fileID: 11400000, guid: 223e96937758e4f42ae95a518761798a, type: 2}
+  - {fileID: 11400000, guid: 721cbe9bd02ec8445aa8c428f58c790f, type: 2}

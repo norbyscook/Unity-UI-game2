@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::State
   levelText: MALFUNCTION
   nextStates:
-  - {fileID: 11400000, guid: 6782a0181bf8ec249a7ab316a7f9487e, type: 2}
+  - {fileID: 11400000, guid: b912facf1159c944e88b60ec5656f0c8, type: 2}
+  - {fileID: 11400000, guid: b912facf1159c944e88b60ec5656f0c8, type: 2}
+  - {fileID: 11400000, guid: b912facf1159c944e88b60ec5656f0c8, type: 2}
