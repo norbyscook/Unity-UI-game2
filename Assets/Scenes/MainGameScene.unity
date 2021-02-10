@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyText: {fileID: 948827418}
-  gameState1: {fileID: 0}
+  gameState1: {fileID: 11400000, guid: 02688ef85ae78dc4ca0195dd9a9c32c1, type: 2}
   currentState: {fileID: 0}
 --- !u!4 &1561265731
 Transform:
