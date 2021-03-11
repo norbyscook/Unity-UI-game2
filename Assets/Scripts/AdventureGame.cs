@@ -18,6 +18,8 @@ public class AdventureGame : MonoBehaviour
     // serialized to debug, other wise this should be private
     [SerializeField] States currentState;
 
+    StateFunctions stFunc = new StateFunctions();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,30 +30,13 @@ public class AdventureGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ManageStates();
+        // update state according to user choice
+        currentState = stFunc.ManageStates(currentState);
         // update text according to state
         bodyText.text = currentState.GetStateBody();
         titleText.text = currentState.GetStateTitle();
     }
 
-    void ManageStates()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            States[] nextStates = currentState.GetNextStates();
-            currentState = nextStates[0];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            States[] nextStates = currentState.GetNextStates();
-            currentState = nextStates[1];
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            States[] nextStates = currentState.GetNextStates();
-            currentState = nextStates[2];
-        }
-
-    }
+    
 }
 
