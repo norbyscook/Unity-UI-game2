@@ -27,6 +27,7 @@ public class AdventureGame : MonoBehaviour
     void Update()
     {
         ManageStates();
+        // update text according to state
         bodyText.text = currentState.GetStateText();
     }
 
