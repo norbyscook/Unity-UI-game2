@@ -10,6 +10,7 @@ public class AdventureGame : MonoBehaviour
     // gives us access to what the viewer sees on display
     [SerializeField] Text bodyText;
     [SerializeField] Text titleText;
+    [SerializeField] Text partitionText;
 
     // gives us access to the 1st state, it's text and other features
     [SerializeField] States gameState1;
@@ -18,7 +19,12 @@ public class AdventureGame : MonoBehaviour
     // serialized to debug, other wise this should be private
     [SerializeField] States currentState;
 
+    // all state related functions
     StateFunctions stFunc = new StateFunctions();
+
+    // partition states
+    string[] partitions = new string[2] { "D", "X" };
+    int currentPartition = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +40,9 @@ public class AdventureGame : MonoBehaviour
         currentState = stFunc.ManageStates(currentState);
         // update text according to state
         bodyText.text = currentState.GetStateBody();
-        titleText.text = currentState.GetStateTitle();
+        titleText.text = currentState.GetStateTitle() + "--Current Partition: " + partitions[currentPartition];
     }
 
-    
+
 }
 

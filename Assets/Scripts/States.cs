@@ -25,6 +25,7 @@ public class States : ScriptableObject
     {
         return titleText;
     }
+
     public States[] GetNextStates()
     {
         return nextStates;

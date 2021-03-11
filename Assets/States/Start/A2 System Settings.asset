@@ -12,17 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b72e97671ed4a4b90aa55865744c8c, type: 3}
   m_Name: A2 System Settings
   m_EditorClassIdentifier: Assembly-CSharp::State
-  titleText: Reboot Protocol
-  levelText: '
+  titleText: System Settings
+  levelText: 'Options:
 
-    System Settings Options:
 
-    
+    1. Open Disk Management Tools
 
-    1. Open Disk Management
-    Tools
-
-    3. Enter Into Data Base'
+    3. Enter Into Data
+    Base'
   nextStates:
   - {fileID: 0}
   - {fileID: 0}
