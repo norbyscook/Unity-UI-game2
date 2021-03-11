@@ -10,7 +10,6 @@ public class AdventureGame : MonoBehaviour
     // gives us access to what the viewer sees on display
     [SerializeField] Text bodyText;
     [SerializeField] Text titleText;
-    [SerializeField] Text partitionText;
 
     // gives us access to the 1st state, it's text and other features
     [SerializeField] States gameState1;
@@ -41,6 +40,8 @@ public class AdventureGame : MonoBehaviour
         // update text according to state
         bodyText.text = currentState.GetStateBody();
         titleText.text = currentState.GetStateTitle() + "--Current Partition: " + partitions[currentPartition];
+
+
     }
 
 
