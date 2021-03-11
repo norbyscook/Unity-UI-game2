@@ -10,26 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 37b72e97671ed4a4b90aa55865744c8c, type: 3}
-  m_Name: A1 Start
+  m_Name: A2 System Settings
   m_EditorClassIdentifier: Assembly-CSharp::State
   titleText: Reboot Protocol
-  levelText: 'Welcome back 2137
+  levelText: '
 
-    ---------------------------------
+    System Settings Options:
 
-    Hyper
-    sleep deactivated.
+    
 
-    Ship Reactor offline.
+    1. Open Disk Management
+    Tools
 
-    Mission status: Null Pointer
-    Exception 24592: Mission not found.
-
-    FATAL ERROR: Reaktor Temperature Too
-    High
-
-    Press 1 to enter systems.'
+    3. Enter Into Data Base'
   nextStates:
-  - {fileID: 11400000, guid: d452d56907e8f4445b15c2c3f6d1c30a, type: 2}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

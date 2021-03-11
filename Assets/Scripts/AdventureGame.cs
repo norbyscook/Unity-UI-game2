@@ -9,11 +9,13 @@ public class AdventureGame : MonoBehaviour
     // set them in inspector
     // gives us access to what the viewer sees on display
     [SerializeField] Text bodyText;
+    [SerializeField] Text titleText;
 
     // gives us access to the 1st state, it's text and other features
     [SerializeField] States gameState1;
 
     // stores current state
+    // serialized to debug, other wise this should be private
     [SerializeField] States currentState;
 
     // Start is called before the first frame update
@@ -28,7 +30,8 @@ public class AdventureGame : MonoBehaviour
     {
         ManageStates();
         // update text according to state
-        bodyText.text = currentState.GetStateText();
+        bodyText.text = currentState.GetStateBody();
+        titleText.text = currentState.GetStateTitle();
     }
 
     void ManageStates()
