@@ -40,10 +40,6 @@ public class AdventureGame : MonoBehaviour
         // update text according to state
         bodyText.text = currentState.GetStateBody();
         titleText.text = currentState.GetStateTitle() + "--Current Partition: " + partitions[currentPartition];
-
-
     }
-
-
 }
 

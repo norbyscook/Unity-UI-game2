@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StateFunctions : MonoBehaviour
 {
-    
     public States ManageStates(States currentState)
     {
         // update state according to user choice
@@ -24,7 +23,6 @@ public class StateFunctions : MonoBehaviour
             States[] nextStates = currentState.GetNextStates();
             currentState = nextStates[2];
         }
-
         return currentState;
     }
 }

@@ -18,8 +18,8 @@ MonoBehaviour:
 
     1. Open Disk Management Tools
 
-    3. Enter Into Data
-    Base'
+    3. Boot Into Current
+    Disk Partition'
   nextStates:
   - {fileID: 0}
   - {fileID: 0}
