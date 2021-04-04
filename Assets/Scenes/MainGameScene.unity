@@ -535,8 +535,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyText: {fileID: 948827418}
-  gameState1: {fileID: 0}
-  currentState: {fileID: 0}
 --- !u!4 &1561265731
 Transform:
   m_ObjectHideFlags: 0
