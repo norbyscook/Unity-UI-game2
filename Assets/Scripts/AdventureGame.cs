@@ -5,16 +5,18 @@ using UnityEngine.UI;
 
 public class AdventureGame : MonoBehaviour
 {
+    #region Declarations
     // variables storing object references
     // set them in inspector
     // gives us access to what the viewer sees on display
     [SerializeField] Text bodyText;
 
     // gives us access to the 1st state, it's text and other features
-    [SerializeField] States gameState1;
+    [SerializeField] StateText gameState1;
 
     // stores current state
-    [SerializeField] States currentState;
+    [SerializeField] StateText currentState;
+    #endregion
 
     // Start is called before the first frame update
     void Start()
@@ -30,24 +32,23 @@ public class AdventureGame : MonoBehaviour
         bodyText.text = currentState.GetStateText();
     }
 
+    #region State changes
     void ManageStates()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            States[] nextStates = currentState.GetNextStates();
-            currentState = nextStates[0];
+           
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            States[] nextStates = currentState.GetNextStates();
-            currentState = nextStates[1];
+            
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            States[] nextStates = currentState.GetNextStates();
-            currentState = nextStates[2];
+            
         }
 
     }
+    #endregion
 }
 
