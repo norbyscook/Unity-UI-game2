@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "statesScrObj")]
-public class States : ScriptableObject
+public class StateText : ScriptableObject
 {
     // variables storing object references
     // set them in inspector
