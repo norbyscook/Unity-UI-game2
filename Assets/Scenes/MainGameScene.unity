@@ -535,6 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyText: {fileID: 948827418}
+  stateText: {fileID: 11400000, guid: e3f6089c76410d04897f33bd10db98f4, type: 2}
 --- !u!4 &1561265731
 Transform:
   m_ObjectHideFlags: 0
