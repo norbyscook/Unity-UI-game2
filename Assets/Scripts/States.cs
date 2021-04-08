@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "statesScrObj")]
-public class States : ScriptableObject
+namespace CanvasProjectStates
 {
+<<<<<<< HEAD
     // variables storing object references
     // set them in inspector
 
@@ -27,7 +27,19 @@ public class States : ScriptableObject
     }
 
     public States[] GetNextStates()
+=======
+    // class that all states will inherit from
+    public class States
+>>>>>>> states_orginization_v3
     {
-        return nextStates;
+        protected AdventureGame adventureGameObj;
+        public States(AdventureGame adventureGame)
+        {
+            adventureGameObj = adventureGame;
+        }
+        public virtual IEnumerator Start()
+        {
+            yield break;
+        }
     }
 }
