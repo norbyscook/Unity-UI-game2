@@ -10,6 +10,8 @@ public class AdventureGame : MonoBehaviour
     // body text is set in inspector
     // out put for the text display
     [SerializeField] private Text bodyText;
+    [SerializeField] private StateText stateText;
+
     #endregion
 
     #region Execution
@@ -45,10 +47,14 @@ public class AdventureGame : MonoBehaviour
     }
     #endregion
 
-    #region UI
-    public void Set_Text(string text)
+    #region UI Text Updates
+    public void SetText(string text)
     {
         bodyText.text = text;
+    }
+    public string GetStateText()
+    {
+        return stateText.GetStateText();
     }
     #endregion
 
