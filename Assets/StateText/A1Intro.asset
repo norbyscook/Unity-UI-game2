@@ -12,4 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b72e97671ed4a4b90aa55865744c8c, type: 3}
   m_Name: A1Intro
   m_EditorClassIdentifier: 
-  levelText: start state
+  levelText: 'Welcome back 2137
+
+    Hyper sleep deactivated.
+
+    Ship Reactor
+    offline.
+
+    Mission status: Null Pointer Exception 24592: Mission not found.
+
+    FATAL
+    ERROR: Reaktor Temperature Too High
+
+    Press any key to enter systems.'
