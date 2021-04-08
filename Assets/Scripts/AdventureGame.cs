@@ -11,9 +11,7 @@ public class AdventureGame : MonoBehaviour
     // out put for the text display
     [SerializeField] private Text bodyText;
     [SerializeField] private StateText stateText;
-
     #endregion
-
     #region Execution
     // Start is called before the first frame update
     void Start()
@@ -48,7 +46,7 @@ public class AdventureGame : MonoBehaviour
     #endregion
 
     #region UI Text Updates
-    public void SetText(string text)
+    public void UpdateText(string text)
     {
         bodyText.text = text;
     }

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b72e97671ed4a4b90aa55865744c8c, type: 3}
   m_Name: New State Text
   m_EditorClassIdentifier: 
-  levelText: 
+  levelText: start state

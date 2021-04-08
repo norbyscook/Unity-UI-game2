@@ -13,7 +13,7 @@ namespace CanvasProjectStates
         {
             while (true)
             {
-                adventureGameObj.SetText(adventureGameObj.GetStateText());
+                adventureGameObj.UpdateText(adventureGameObj.GetStateText());
                 yield return null;
             }
         }
