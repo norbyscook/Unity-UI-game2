@@ -10,6 +10,7 @@ public class AdventureGame : StateMachine
     // body text is set in inspector
     // out put for the text display
     [SerializeField] private Text bodyText;
+    // TODO change this to start state text
     [SerializeField] private StateText stateText;
     #endregion
 
@@ -19,6 +20,7 @@ public class AdventureGame : StateMachine
     {
         // set initial state
         SetState(new A1Intro(this));
+        // TODO set starting state text
     }
 
     // Update is called once per frame
@@ -30,14 +32,19 @@ public class AdventureGame : StateMachine
     #endregion
 
     #region UI Text Updates
-    public void UpdateText(string text)
+    
+    // draws the text onto screen via the text game object
+    public void DrawText(string text)
     {
         bodyText.text = text;
     }
+
+    // returns text from the current State Text scriptable object.
+    // to be passed into draw text
     public string GetStateText()
     {
+        // TODO instead of using the starting state text, use the current state text
         return stateText.GetStateText();
     }
     #endregion
-
 }

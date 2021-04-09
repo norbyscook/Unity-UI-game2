@@ -12,7 +12,7 @@ namespace CanvasProjectStates
 
         public override IEnumerator Start()
         {
-            adventureGameObj.UpdateText("A2");
+            adventureGameObj.DrawText("A2");
             yield break;
         }
     }

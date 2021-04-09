@@ -46,13 +46,14 @@ namespace CanvasProjectStates
             }
         }
         
+        // sends text from state text scriptable object -> draw text function
         public virtual IEnumerator UpdateText()
         {
             // if text is not updated after state has been changed
             if (!textUpdated)
             {
                 // update text once
-                adventureGameObj.UpdateText(adventureGameObj.GetStateText());
+                adventureGameObj.DrawText(adventureGameObj.GetStateText());
                 TextUpdated();
             }
             yield break;
