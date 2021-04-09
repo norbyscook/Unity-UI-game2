@@ -9,6 +9,7 @@ namespace CanvasProjectStates
         public A2(AdventureGame adventureGame) : base (adventureGame)
         {
         }
+
         public override IEnumerator Start()
         {
             adventureGameObj.UpdateText("A2");

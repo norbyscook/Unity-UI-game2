@@ -26,8 +26,6 @@ public class AdventureGame : StateMachine
     {
         // print the state texts
         StartCoroutine(currentState.Start());
-        // check for changes in states
-        StartCoroutine(currentState.ChangeState());
     }
     #endregion
 
