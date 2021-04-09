@@ -11,25 +11,12 @@ namespace CanvasProjectStates
         }
         public override IEnumerator Start()
         {
-            // if text is not updated after button as been pressed
-            if (!textUpdated)
-            {
-                // update text once
-                adventureGameObj.UpdateText(adventureGameObj.GetStateText());
-                TextUpdated();
-            }
+            // update text
+            adventureGameObj.StartCoroutine(UpdateText());
+            // check for state changes
+            adventureGameObj.StartCoroutine(ChangeStates());
 
-            // while no correct button is pressed after text has been updated
-            while (!buttonPressed)
-            {
-                // check for button presses
-                if (Input.GetKeyDown("space"))
-                {
-                    ButtonPressed();
-                    adventureGameObj.SetState(new A2(adventureGameObj));
-                }
-                yield return null;
-            }
+            yield break;
         }
     }
 }
