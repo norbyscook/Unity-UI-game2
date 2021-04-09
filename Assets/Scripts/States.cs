@@ -23,6 +23,11 @@ namespace CanvasProjectStates
         // called when each state starts
         public virtual IEnumerator Start()
         {
+            // update text
+            adventureGameObj.StartCoroutine(UpdateText());
+            // check for state changes
+            adventureGameObj.StartCoroutine(ChangeStates());
+
             yield break;
         }
         

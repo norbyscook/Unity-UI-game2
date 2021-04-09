@@ -13,11 +13,7 @@ namespace CanvasProjectStates
         public override IEnumerator Start()
         {
             adventureGameObj.UpdateText("A2");
-            while (true)
-            {
-
-                yield return null;
-            }
+            yield break;
         }
     }
 }

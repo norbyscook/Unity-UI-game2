@@ -9,15 +9,6 @@ namespace CanvasProjectStates
         public A1Intro(AdventureGame adventureGame) : base (adventureGame)
         {
         }
-        public override IEnumerator Start()
-        {
-            // update text
-            adventureGameObj.StartCoroutine(UpdateText());
-            // check for state changes
-            adventureGameObj.StartCoroutine(ChangeStates());
-
-            yield break;
-        }
     }
 }
 
