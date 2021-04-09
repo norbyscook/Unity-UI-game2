@@ -4,16 +4,17 @@ using UnityEngine;
 
 namespace CanvasProjectStates
 {
-    public class A1Intro : States
+    public class A2 : States
     {
-        public A1Intro(AdventureGame adventureGame) : base (adventureGame)
+        public A2(AdventureGame adventureGame) : base (adventureGame)
         {
         }
         public override IEnumerator Start()
         {
-            adventureGameObj.UpdateText(adventureGameObj.GetStateText());
+            adventureGameObj.UpdateText("A2");
             while (true)
             {
+
                 yield return null;
             }
         }

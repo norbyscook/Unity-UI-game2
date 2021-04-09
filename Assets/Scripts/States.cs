@@ -12,7 +12,13 @@ namespace CanvasProjectStates
         {
             adventureGameObj = adventureGame;
         }
+
         public virtual IEnumerator Start()
+        {
+            yield break;
+        }
+
+        public virtual IEnumerator ChangeState()
         {
             yield break;
         }
