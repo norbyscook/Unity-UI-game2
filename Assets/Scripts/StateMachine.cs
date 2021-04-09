@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace CanvasProjectStates
 {
-
+    // encapsulates fields and methods related to state changes
     public class StateMachine : MonoBehaviour
     {
         protected States currentState;
