@@ -11,9 +11,9 @@ namespace CanvasProjectStates
         }
         public override IEnumerator Start()
         {
+            adventureGameObj.UpdateText(adventureGameObj.GetStateText());
             while (true)
             {
-                adventureGameObj.UpdateText(adventureGameObj.GetStateText());
                 yield return null;
             }
         }
