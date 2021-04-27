@@ -27,10 +27,11 @@ namespace CanvasProjectStates
             adventureGameObj.StartCoroutine(UpdateText());
             // check for state changes
             adventureGameObj.StartCoroutine(ChangeStates());
-
             yield break;
         }
-        
+        #endregion
+
+        #region helper functions
         public virtual IEnumerator ChangeStates()
         {
             // while state has not changed
@@ -45,7 +46,7 @@ namespace CanvasProjectStates
                 yield return null;
             }
         }
-        
+
         // sends text from state text scriptable object -> draw text function
         public virtual IEnumerator UpdateText()
         {
@@ -58,10 +59,7 @@ namespace CanvasProjectStates
             }
             yield break;
         }
-        #endregion
-
-        #region Button And TextUpdate Checks
-
+        
         // if text is updated 
         protected void TextUpdated()
         {
