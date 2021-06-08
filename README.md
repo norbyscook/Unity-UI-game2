@@ -1,5 +1,5 @@
 # Unity-UI-game2
-a text adventure game using a state machine.
+a work in progress text adventure game using a state machine.
 # flow chart
 a link to the flow chart used <br />
 shows states and game flow <br />
